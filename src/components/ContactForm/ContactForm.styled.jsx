@@ -1,10 +1,13 @@
 import styled from "@emotion/styled";
+import { Form } from "formik";
 
 export const Container = styled.div`
-
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 `;
 
-export const Form = styled.form`
+export const FormBlock = styled(Form)`
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -18,11 +21,8 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-    display: flex;
-    gap: 20px;
     color: hsl(230, 100%, 95%);
     font-size: 30px;
-    justify-content: space-between;
 `;
 
 export const Button = styled.button`
