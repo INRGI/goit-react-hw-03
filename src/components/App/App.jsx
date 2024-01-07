@@ -1,4 +1,5 @@
-import ContactForm from "../ContactForm";
+// import ContactForm from "../ContactForm";
+import ContactForm from "../NewContactForm";
 import ContactList from "../ContactList";
 import Filter from "../Filter";
 import { nanoid } from "nanoid";
@@ -12,7 +13,7 @@ const contactsExample = [
   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 ];
 
-export const App = () => {
+const App = () => {
   const [contacts, setContacts] = useState(() => {
     return JSON.parse(window.localStorage.getItem('contacts')) ?? contactsExample;
   });
@@ -77,3 +78,5 @@ export const App = () => {
       </Container>
     );
 };
+
+export default App;
